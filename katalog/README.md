@@ -1,2 +1,2 @@
 https://pbp-syarief.herokuapp.com/katalog/
-![vbg bweek](https://user-images.githubusercontent.com/112609721/190165648-2acf7228-b6f6-4333-bbf6-78a3fdae7972.jpg)
+![Bagan-PBP](https://user-images.githubusercontent.com/112609721/190241011-a51d210a-bafa-4c91-b8c3-2d31e08154d4.png)
