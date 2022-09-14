@@ -54,8 +54,8 @@ Menambahkan potongan kode dibawah ini ke dalam fungsi show_catalog yang sudah di
 
 14. Mengubah Fill me! di file HTML yang ada pada folder template, dalam HTML tag <p> menjadi `{{nama}}` dan `{{npm}}` untuk menampilkan nama dan npm di halaman HTML.
 15. Menambahkan potongan kode berikut untuk menampilkan daftar katalog ke dalam tabel.
-  
-  `{% for katalog in lsit_catalog %}
+  ```
+  {% for katalog in lsit_catalog %}
     <tr>
         <th>{{katalog.item_name}}</th>
         <th>{{katalog.item_price}}</th>
@@ -65,6 +65,6 @@ Menambahkan potongan kode dibawah ini ke dalam fungsi show_catalog yang sudah di
         <th>{{katalog.item_url}}</th>
     </tr>
 {% endfor %}`
-  
+```  
 16. Melakukan `add, commit, dan push` untuk menyimpan kedalam repositori GitHub.
 17. Membuat nama aplikasi pada Heroku dan menyimpan API key, kemudian menambahkan 2 variabel repository secret baru yaitu HEROKU_API_KEY dengan API key kita dan HEROKU_APP_NAME dengan nama aplikasi yang telah kita buat pada Heroku, lalu melakukan re-run jobs pada GitHub Actions. 
