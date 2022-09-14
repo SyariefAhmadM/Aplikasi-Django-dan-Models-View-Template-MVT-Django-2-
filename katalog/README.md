@@ -1,11 +1,15 @@
 **Berikut Link Heroku** :
 https://pbp-syarief.herokuapp.com/katalog/
-**Bagan**
+
+**Bagan request client ke web aplikasi berbasis Django**
 ![Bagan-PBP](https://user-images.githubusercontent.com/112609721/190241819-26f90bc0-7ae3-44c1-b623-bf69ae413350.png)
+
 Sesuai bagan tersebut, kaitan antara urls.py, views.py, models.py, dan berkas html adalah :
 Permintaan user yang masuk kedalam server django akan diproses melalui urls agar dapat diteruskan kedalam views yang didefinisikan oleh developer untuk memproses request tersebut. Namun, apabila terdapat proses yang membutuhkan keterlibatan database(Basis data) akan mengembalikan hasil dari query tersebut kedalam views. Setelah request tersebut selsai diproses, hasil dari proses tersebut akan dihubungkan ke dalam HTML yang sudah didefinisikan sebelum akhirnya HTML tersebut dikembalikan ke user sebagai respons
+
 Karena dengan Virtual environment (lingkungan virtual), kita dapat memisahkan pengaturan dan package yang diinstal pada setiap proyek django yang kita buat, sehingga perubahan yang dilakukan pada satu proyek tidak mempengaruhi proyek lainnya. Dengan kata lain, setiap proyek Django sebaiknya memiliki virtualenv-nya sendiri. Kita tetap bisa membuat sebuah aplikasi web berbasis django tanpa menggunakan virtual environment, tetapi dikhawatirkan apabila kita melakukan suatu perubahan pada satu proyek, maka proyek lainnya ikut terubah.
-Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
+
+Cara mengimplementasikan poin 1 sampai dengan 4 di atas.
 1. Pertama-tama, sebelum kita melakukan modifikasi pada template yang diberikan, masuk kedalam repository yang sudah kita clone lalu buatlah terlebih dahulu virtual enviroment dengan perintah : `python -m venv env`
 2. Nyalakan virtual environment dengan perintah yang sesuai dengan jenis sistem operasi masing-masing, disini saya menggunakan MAC OS : `source env/bin/activate`
 3. Install dependencies yang diperlukan untuk menjalankan proyek Django dengan perintah `pip install -r requirements.txt`
@@ -16,7 +20,7 @@ Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
 8. Pada views.py yang ada dalam folder katalog, kita membuat sebuah fungsi yang menerima parameter request dan mengembalikan render(request, "katalog.html"), yaitu dengan kode 
 `def show_katalog(request): 
     return render(request, "katalog.html")`
-10. Melakukan routing terhadap fungsi views yang telah dibuat sehingga nantinya halaman HTML dapat ditampilkan lewat browser. Isi dari urls.py tersebut adalah 
+9. Melakukan routing terhadap fungsi views yang telah dibuat sehingga nantinya halaman HTML dapat ditampilkan lewat browser. Isi dari urls.py tersebut adalah 
 `from django.urls import path
 from katalog.views import show_katalog
 
