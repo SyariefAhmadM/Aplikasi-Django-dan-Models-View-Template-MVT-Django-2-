@@ -1,7 +1,7 @@
 **Berikut Link Heroku** :
 https://pbp-syarief.herokuapp.com/katalog/
 
-**Bagan request client ke web aplikasi berbasis Django**
+                                                 **Bagan request client ke web aplikasi berbasis Django**
 
 ![Bagan-PBP](https://user-images.githubusercontent.com/112609721/190241819-26f90bc0-7ae3-44c1-b623-bf69ae413350.png)
 
@@ -56,4 +56,4 @@ Menambahkan potongan kode dibawah ini ke dalam fungsi show_catalog yang sudah di
     </tr>
 {% endfor %}`
 16. Melakukan `add, commit, dan push` untuk menyimpan kedalam repositori GitHub.
-17. Membuat nama aplikasi pada Heroku dan menyimpan API key, kemudian menambahkan 2 variabel repository secret baru yaitu `HEROKU_API_KEY` dengan API key kita dan `HEROKU_APP_NAME` dengan nama aplikasi yang telah kita buat pada Heroku, lalu melakukan re-run jobs pada GitHub Actions. 
+17. Membuat nama aplikasi pada Heroku dan menyimpan API key, kemudian menambahkan 2 variabel repository secret baru yaitu HEROKU_API_KEY dengan API key kita dan HEROKU_APP_NAME dengan nama aplikasi yang telah kita buat pada Heroku, lalu melakukan re-run jobs pada GitHub Actions. 
