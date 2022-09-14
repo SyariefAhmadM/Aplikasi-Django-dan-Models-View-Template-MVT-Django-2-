@@ -19,20 +19,20 @@ Cara mengimplementasikan poin 1 sampai dengan 4 di atas.
 6. Menjalankan perintah `python manage.py migrate` untuk menerapkan skema model yang telah dibuat ke dalam database Django lokal.
 7. Menjalankan perintah python manage.py loaddata `initial_catalog_data.json` untuk memasukkan data tersebut ke dalam database Django lokal.
 8. Pada views.py yang ada dalam folder katalog, kita membuat sebuah fungsi yang menerima parameter request dan mengembalikan render(request, "katalog.html"), yaitu dengan kode 
-
-`def show_katalog(request): 
-    return render(request, "katalog.html")`
-    
+```
+def show_katalog(request): 
+    return render(request, "katalog.html")
+```    
 9. Melakukan routing terhadap fungsi views yang telah dibuat sehingga nantinya halaman HTML dapat ditampilkan lewat browser. Isi dari urls.py tersebut adalah 
-
-`from django.urls import path
+```
+from django.urls import path
 from katalog.views import show_katalog
 
 app_name = 'katalog'
 urlpatterns = [
     path('', show_wishlist, name='show_wishlist'),
-]'
-
+]
+```
 10. Mendaftarkan aplikasi katalog ke dalam urls.py pada folder project_django dengan menambahkan kode :
 
 `path('katalog/', include('katalog.urls')),`
@@ -40,14 +40,14 @@ urlpatterns = [
 11. Menjalankan proyek Django dengan perintah python manage.py runserver dan membuka http://localhost:8000/wishlist/ di browser untuk melihat halaman yang sudah dibuat.
 12.  Meng-import models yang sudah dibuat (CatalogItem) ke dalam file views.py. Dengan `from wishlist.models import CatalogItem`, kita akan menggunakan class tersebut untuk melakukan pengambilan data dari database.
 Menambahkan potongan kode dibawah ini ke dalam fungsi show_catalog yang sudah dibuat. Potongan kode ini berfungsi untuk memanggil fungsi query ke model database dan menyimpan hasil query tersebut ke dalam sebuah variabel.
-
-`data_katalog_item = CatalogItem.objects.all()
+```
+data_katalog_item = CatalogItem.objects.all()
     context = {
         'list_catalog': data_katalog_item,
         'nama': 'mas Syarief',
         'npm': '2106653445'
-    }`
-    
+    }
+```    
 13. Menambahkan context sebagai parameter ketiga pada pengembalian fungsi render di fungsi yang sudah dibuat. Data yang ada pada variabel context tersebut akan ikut di-render oleh Django sehingga nantinya dapat memunculkan data tersebut pada halaman HTML.
 
 `return render(request, "katalog.html", context)`
