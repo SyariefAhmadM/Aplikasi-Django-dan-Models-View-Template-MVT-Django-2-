@@ -12,7 +12,7 @@ JSON    : JSON merupakan singkatan dari **JavaScript Object Notation**, JSON mer
 
 XML     : XML merupakan singkatan dari **eXtensible Markup Language**. XML telah digunakan pada banyak aplikasi web ataupun **mobile**, yang berfungsi untuk mengirimkan dan menyimpan sebuah data. XML telah didesain menjadi **self-descriptive**, sehingga kita dapat mengerti informasi apa yang ingin disampaikan dari data yang tertulis dengan membaca XML tersebut. XML ini hanyalah informasi yang dibungkas dalam tag.
 
-HTML    : HTML merupakan singkatan dari **Hypertext Markup Language** atau "bahasa markup". Secara umum, HTML merupakan standar pemrograman yang berfungsi untuk membuat / membangun sebuah halaman pada **website** yang nantinya dapat diakses melalui internet. 
+HTML    : HTML merupakan singkatan dari **Hypertext Markup Language** atau "bahasa markup". Secara umum, HTML merupakan standar pemrograman yang berfungsi untuk membuat / membangun sebuah halaman pada **website** yang nantinya dapat diakses dan ditampilkan melalui internet. 
 
 Perbedaan JSON dan XML adalah : 
 - JSON lebih mudah dibaca dibanding XML.
