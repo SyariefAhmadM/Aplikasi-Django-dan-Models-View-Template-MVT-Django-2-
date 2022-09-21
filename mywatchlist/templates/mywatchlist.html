@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>😵‍💫 Assignment-3 PBP/PBD 👨‍💻</h1>
+
+  <h5>Name: </h5>
+  <p>{{nama}}</p>
+
+  <h5>Student ID: </h5>
+  <p>{{npm}}</p>
+
+  <h5>Pesan: </h5>
+  <p>{{pesan}}</p>
+
+  <body bgcolor=”#DBF9FC">
+  <table border = "5" bordercolor = "purple">
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release Date</th>
+      <th>Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for mywatchlist in list_mywatchlist %}
+    <tr>
+        <th>{{mywatchlist.watched}}</th>
+        <th>{{mywatchlist.title}}</th>
+        <th>{{mywatchlist.rating}}</th>
+        <th>{{mywatchlist.release_date}}</th>
+        <th>{{mywatchlist.review}}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

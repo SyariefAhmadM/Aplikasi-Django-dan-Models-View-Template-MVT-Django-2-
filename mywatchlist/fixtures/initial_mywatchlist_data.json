@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 1,
+        "fields": {
+            "watched": true,
+            "title": "Fight Club",
+            "rating": 5,
+            "release_date": "11 November 1999",
+            "review": "Plotwist tergilak"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 2,
+        "fields": {
+            "watched": true,
+            "title": "Pengabdi Setan 2",
+            "rating": 5,
+            "release_date": "4 Agustus 2022 ",
+            "review": "Pocong ditembak"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 3,
+        "fields": {
+            "watched": false,
+            "title": "Jurassic World Dominion",
+            "rating": 4,
+            "release_date": "8 Juni 2022",
+            "review": "Seru batt Chris Pratt gokil"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 4,
+        "fields": {
+            "watched": true,
+            "title": "The Godfather",
+            "rating": 5,
+            "release_date": "24 Maret 1972",
+            "review": "I have learned more from the streets than classroom"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 5,
+        "fields": {
+            "watched": true,
+            "title": "No Way Home",
+            "rating": 5,
+            "release_date": "15 Desember 2021",
+            "review": "tom holland pea"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 6,
+        "fields": {
+            "watched": true,
+            "title": "Multiverse of Madness",
+            "rating": 5,
+            "release_date": "5 Mei 2022",
+            "review": "Wanda serem parah mennn"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 7,
+        "fields": {
+            "watched": false,
+            "title": "The Fast & Furious",
+            "rating": 4,
+            "release_date": "22 Juni 2001",
+            "review": "balapan mati"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 8,
+        "fields": {
+            "watched": true,
+            "title": "Night at The Museum",
+            "rating": 4,
+            "release_date": "17 Desember 2006",
+            "review": "ngakak total"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 9,
+        "fields": {
+            "watched": true,
+            "title": "Haryy Potter",
+            "rating": 5,
+            "release_date": "19 Desember 2001",
+            "review": "expecto patronum"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist",
+        "pk": 10,
+        "fields": {
+            "watched": false,
+            "title": "Peaky Blinders",
+            "rating": 4,
+            "release_date": "12 September 2013",
+            "review": "Sigma male"
+        }
+    }
+]
