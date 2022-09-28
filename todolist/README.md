@@ -8,7 +8,7 @@ CSRF adalah singkatan dari Cross Site Request Forgery, yaitu salah satu serangan
 Bisa, kita tidak harus menggunakan {{ form.as_table }} untuk membuat form. Kita dapat membuat Form secara manual dengan menggunakan tag input, textarea, select, option, dan masih banyak lagi. Tag tersebut dapat kita tambahkan dengan contoh atribut seperti name dan juga type yang sesuai dengan form. Nilai dari atribut name tersebut akan menjadi variable form.
 
 ## 3. Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
-Ketika user klik tombol buat, maka akan dikirimkan
+Ketika user klik tombol buat, maka akan dikirimkan melalui request post. Data tersebut akan diproses melalui fungsi yang ada pada views.py dan disesuaikan juga degan models.py. Kemudian hasil input user akan disimpan dengan perintah .save() dan data tersebut akan tersimpan di database. Data yang sudah disimpan tersebut dapat kita akses dengan Task.objects.filter(user=request.user). Data tersebut akan disimpan pada context & rendering di HTML.
 
 ## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Membuat django-app bernama todolist dan menambahkan todolist ke dalam variable INSTALLED_APPS pada file settings.py di folder project_django
