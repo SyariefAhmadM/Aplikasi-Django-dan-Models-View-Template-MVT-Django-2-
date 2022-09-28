@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>😵‍💫 Assignment-4 PBP/PBD 👨‍💻</h1>
+
+  <h5>User: </h5>
+  <p>{{user}}</p>
+  <a href="{% url 'todolist:new_task' %}">Tambah Task Baru</a>
+
+  <body bgcolor=”#DBF9FC">
+  <table border = "3" bordercolor = "purple">
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    {% for x in list_data %}
+    <tr>
+        <th>{{x.date}}</th>
+        <th>{{x.title}}</th>
+        <th>{{x.description}}</th>
+        
+        {% if x.is_finished == True %}
+            <td>Selesai</td>
+        {% else %}
+            <td>Belum Selsai</td>
+        {% endif %}
+
+        <td>
+            <a href="{% url 'todolist:delete_task' x.title %}"><button type="submit" class="btn btn-danger">Delete<button></a>
+            <a href="{% url 'todolist:update_task' x.title %}"><button type="submit" class="btn btn-danger">Update<button></a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+{% endblock content %}
