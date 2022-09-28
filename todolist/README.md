@@ -1,3 +1,6 @@
+Berikut Link Herokku :
+https://pbp-syarief.herokuapp.com/todolist
+
 ## 1. Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 CSRF adalah singkatan dari Cross Site Request Forgery, yaitu salah satu serangan tertua dan paling sederhana pada suatu web. Django mempunyai built in protection untuk sebagian besar jenis CSRF. CSRF memiliki token yang berfungsi untuk melakukan validasi terhadap permintaan yang sesuai dan menolak permintaan apabila token dari CSRF tidak valid. Token dari CSRF akan dikirmkan secara sembunyi dalam bentuk <input> pada bagian Form HTML yang dikirimkan menggunakan metode POST.  Biasanya {% csrf_token %} ditempatkan dalam HTML sebelum input dan lokasi mana-pun di mana data yang dapat dikontrol user disematkan dalam HTML. Fungsi dari {% csrf_token %} adalah untuk mengurangi berbagai teknik di mana para penyerang web dapat menggunakan data yang dibuat untuk memanipulasi dokumen HTML dan menangkap bagian dari isi code HTML tersebut. Namun, apabila di dalam sebuah dokumen HTML tidak terdapat {% csrf_token %}, maka website tidak dapat melakukan validasi terhadap user yang seharusnya sehingga akan dengan mudah web tersebut dapat di hack oleh user lain.
 
