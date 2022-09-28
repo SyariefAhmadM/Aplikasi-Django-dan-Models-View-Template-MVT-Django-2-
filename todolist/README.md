@@ -7,7 +7,7 @@ Bisa, kita tidak harus menggunakan {{ form.as_table }} untuk membuat form. Kita 
 **3. Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.**
 Ketika user klik tombol buat, maka akan dikirimkan
 
-**4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**
+## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.##
 1. Membuat django-app bernama todolist dan menambahkan todolist ke dalam variable INSTALLED_APPS pada file settings.py di folder project_django
 2. Menambahkan aplikasi todolist ke dalam urls.py pada folder project_django
 3. Membuat model task yang memiliki atribut user, date, title, description.
