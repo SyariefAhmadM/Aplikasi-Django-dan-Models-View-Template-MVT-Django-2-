@@ -1,44 +1,54 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block meta %}
 <title>Login</title>
 {% endblock meta %}
 
 {% block content %}
 
-<div class = "login">
+<link rel="stylesheet" href="{% static 'login.css' %}" />
+<div class="login">
 
-    <h1>Login</h1>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
     <form method="POST" action="">
         {% csrf_token %}
+        <h1>Sign in</h1>
         <table>
             <tr>
-                <td>Username: </td>
+                <td>Username </td>
                 <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
             </tr>
-                    
+
             <tr>
-                <td>Password: </td>
+                <td>Password </td>
                 <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
             </tr>
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td><input class="btn login_btn" type="submit" value="Log in"></td>
             </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                Don't have an account? <a href="{% url 'todolist:register' %}"> Sign Up? </a>
+            </td>
+        </tr>
+        
         </table>
     </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
-        
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
 
 </div>
 
